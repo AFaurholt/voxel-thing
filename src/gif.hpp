@@ -51,11 +51,11 @@ public:
         std::vector<uint8_t> pixels(m_width * m_height * 4);
         glReadPixels(0, 0, m_width, m_height, GL_RGBA, GL_UNSIGNED_BYTE, pixels.data());
         // Convert RGBA to RGB and flip vertically
-        std::vector<uint8_t> frame(m_width * m_height * 3);
+        std::vector<uint8_t> frame(m_width * m_height * 4);
         for (int y = 0; y < m_height; y++) {
             for (int x = 0; x < m_width; x++) {
                 int srcIdx = (m_height - 1 - y) * m_width * 4 + x * 4;
-                int dstIdx = y * m_width * 3 + x * 3;
+                int dstIdx = y * m_width * 4 + x * 4;
                 frame[dstIdx] = pixels[srcIdx];     // R
                 frame[dstIdx + 1] = pixels[srcIdx + 1]; // G
                 frame[dstIdx + 2] = pixels[srcIdx + 2]; // B
