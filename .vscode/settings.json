@@ -1,0 +1,9 @@
+{
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "${env:VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+    },
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "files.associations": {
+        "xstring": "cpp"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "hello-world-voxel",
+  "version": "0.1.0",
+  "builtin-baseline": "912567f6fdd1883e07b070dcc0aa67cec072042a",
+  "dependencies": [
+    "sdl3",
+    "glew",
+    "glm"
+  ]
+}
